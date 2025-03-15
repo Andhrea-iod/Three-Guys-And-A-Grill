@@ -55,7 +55,6 @@
             text-align: center;
             font-size: 45px;
             margin-bottom: 50px;
-
         }
 
         .content p {
@@ -65,7 +64,6 @@
             width: 75%;
             text-align: center;
             color: #555;
-
         }
 
         .content h2 {
@@ -79,24 +77,23 @@
         }
 
         .dropdown-menu a {
-        font-size: large;
-        padding: 10;
-    }
+            font-size: large;
+            padding: 10;
+        }
 
-    .food-menu {
+        .food-menu {
     transition: 0.5s ease;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; /* Prevents wrapping to a new row */
+    flex-wrap: wrap; /* Allow items to wrap */
     gap: 20px;
     max-width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling if necessary */
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .food-item {
-    width: 24%; /* Adjusted for 4 items in one row */
+    width: 24%; /* 4 items per row by default */
     height: 600px; /* Fixed height */
     border: 5px double rgb(255, 201, 51);
     border-radius: 10px;
@@ -107,7 +104,7 @@
     z-index: 5;
     transition: 0.5s ease;
     display: flex;
-    flex-direction: column;     
+    flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -157,7 +154,6 @@
 .food-item button:hover {
     background-color: darkorange;
 }
-
 
         footer {
             background-color: rgb(247, 183, 45);
@@ -222,6 +218,32 @@
             background-color: rgb(247, 183, 45);
             border-color: rgb(247, 183, 45);
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .food-item {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .food-item {
+                width: 100%;
+            }
+
+            .navbar-collapse {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 10px 0;
+            }
+
+            .content {
+                width: 90%;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -229,7 +251,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
             <a class="logo" href="Main Page.html">
-                <img src="images/logo.png" alt="Logo">
+                <img src="images/logo.png" alt="Logo" class="img-fluid">
             </a>
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#col">
@@ -270,46 +292,39 @@
     <div class="web-body">
         <div class="content">
             <h1>OUR FOOD</h1>
-<hr>
-<p>
-    At Three Guys And A Grill, the food is the heart and soul of the dining experience. With a focus on hardwood charcoal grilling, every dish infuses rich, smoky flavors that tantalize the taste buds. From juicy sausages to succulent grilled meats, each item on the menu is carefully crafted to perfection.
-</p>
-
-
-<div class="food-menu">
-    <div class="food-item">
-        <img src="ofburger.jpg" alt="Texas Burger">
-        <h2>Burgers</h2>
-        <p>Our burgers are a testament to our dedication to quality and flavor. Each burger is made with premium beef, seasoned to perfection, and grilled over an open flame to achieve that perfect char and smoky taste.</p>
-        <button>Order Now</button>
-    </div>
-
-    <div class="food-item">
-        <img src="ofdrink.jpg" alt="Coke">
-        <h2>Drinks</h2>
-        <p>To complement our hearty meals, we offer a selection of refreshing drinks, including classic Coke, Coke Zero, and Sprite.</p>
-        <button>Order Now</button>
-    </div>
-
-    <div class="food-item">
-        <img src="ofhotdog.jpg" alt="Thunder Hotdog">
-        <h2>Hotdogs</h2>
-        <p>Made with premium meats and unique seasoning blends, our hotdogs are grilled to perfection over an open flame.</p>
-        <button>Order Now</button>
-    </div>
-
-    <div class="food-item">
-        <img src="ofsides.jpg" alt="Sides">
-        <h2>Sides</h2>
-        <p>No meal is complete without our delicious sides. From crispy fries to fresh salads, our sides are the perfect complement to our grilled specialties.</p>
-        <button>Order Now</button>
-    </div>
-</div>
-
-<p>
-    Whether you're dining in our cozy restaurant or enjoying our catering services, Three Guys And A Grill delivers a memorable culinary experience that keeps guests coming back for more.
-</p>
-
+            <hr>
+            <p>
+                At Three Guys And A Grill, the food is the heart and soul of the dining experience. With a focus on hardwood charcoal grilling, every dish infuses rich, smoky flavors that tantalize the taste buds. From juicy sausages to succulent grilled meats, each item on the menu is carefully crafted to perfection.
+            </p>
+            <div class="food-menu">
+                <div class="food-item">
+                    <img src="ofburger.jpg" alt="Texas Burger">
+                    <h2>Burgers</h2>
+                    <p>Our burgers are a testament to our dedication to quality and flavor. Each burger is made with premium beef, seasoned to perfection, and grilled over an open flame to achieve that perfect char and smoky taste.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="ofdrink.jpg" alt="Coke">
+                    <h2>Drinks</h2>
+                    <p>To complement our hearty meals, we offer a selection of refreshing drinks, including classic Coke, Coke Zero, and Sprite.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="ofhotdog.jpg" alt="Thunder Hotdog">
+                    <h2>Hotdogs</h2>
+                    <p>Made with premium meats and unique seasoning blends, our hotdogs are grilled to perfection over an open flame.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food-item">
+                    <img src="ofsides.jpg" alt="Sides">
+                    <h2>Sides</h2>
+                    <p>No meal is complete without our delicious sides. From crispy fries to fresh salads, our sides are the perfect complement to our grilled specialties.</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <p>
+                Whether you're dining in our cozy restaurant or enjoying our catering services, Three Guys And A Grill delivers a memorable culinary experience that keeps guests coming back for more.
+            </p>
         </div>
     </div>
     <footer>    
