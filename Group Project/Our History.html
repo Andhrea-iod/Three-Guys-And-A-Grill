@@ -112,75 +112,77 @@
 
     
         footer {
-            background-color: rgb(247, 183, 45);
-            color: black;
-            text-align: center;
-            padding: 50px 0;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-        }
-    
-        footer .footer-text {
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-    
-        footer table {
-            width: 50%;
-            margin: 0 auto;
-        }
-    
-        footer table th, 
-        footer table td {
-            padding: 10px;
-            font-size: 18px;
-        }
-    
-        footer table a {
-            color: black;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-    
-        footer table a:hover {
-            color: red;
-        }
-    
-        .web-body p {
-            font-size: x-large;
-        }
-    
-        .top {
-            position: relative;
-            font-size: large;
-            font-weight: 600;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            margin-top: 20px;
-        }
-    
-        .top:hover {
-            color: red;
-        }
-    
-        .top button {
-            background-color: white;
-            border: 1px solid black;
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-    
-        .top button:hover {
-            background-color: rgb(247, 183, 45);
-            border-color: rgb(247, 183, 45);
-        }
+    background-color: rgb(247, 183, 45);
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
 
-        @media (max-width: 768px) {
+footer .footer-text {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer table {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer table th,
+footer table td {
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer table a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer table a:hover {
+    color: red;
+}
+
+.web-body p {
+    font-size: x-large;
+}
+
+.top {
+    position: relative;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.top:hover {
+    color: red;
+}
+
+.top button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.top button:hover {
+    background-color: rgb(247, 183, 45);
+    border-color: rgb(247, 183, 45);
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
     .navbar-collapse {
         justify-content: center;
     }
@@ -197,7 +199,27 @@
     footer {
         padding: 30px 10px;
     }
+
+    footer table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    footer table th, 
+    footer table td {
+        text-align: center;
+    }
+
+    footer .footer-text {
+        font-size: 1.2rem;
+    }
+
+    .top button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
+
 
     </style>
     
