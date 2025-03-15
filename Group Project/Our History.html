@@ -102,11 +102,14 @@
     
         .history {
             position: relative;
-            padding: 120px;
-            background-color: rgb(255, 242, 226);
-            width: 70%;
+            padding: 5px; 
+            background-color: rgb(255, 242, 226); 
+            width: 100%;
             margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
         }
+
     
         footer {
             background-color: rgb(247, 183, 45);
@@ -176,6 +179,26 @@
             background-color: rgb(247, 183, 45);
             border-color: rgb(247, 183, 45);
         }
+
+        @media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .history {
+        padding: 60px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+}
+
     </style>
     
 </head>
@@ -229,22 +252,24 @@
     </div>
     <div class="web-body">
         <center>
-            <div class="history">
-                
-                <h1>OUR HISTORY</h1>
-
-                <img src="history.jpg" alt="History">
-                
-                <hr>
-                <p>Three Guys And A Grill is a cozy restaurant owned by three friends from different parts of the world. Duncan, a Kiwi; Tom, who hails from Switzerland; and Frank, a Filipino-American, came together to share their homemade recipes with locals and foreigners alike. Their journey began with a shared desire to introduce the best sausages to the Philippines. <br><br>
-                    Inside the warm and inviting restaurant, guests can witness the trusty grill where all the magic happens. Using locally sourced ingredients, they craft mouth-watering dishes and sauces in their kitchen. Their homemade ketchup, muscovado sugar, and fruity guava mustard add unique flavors to every bite. <br><br>
-                    Concerned about health, Three Guys And A Grill offers homemade sodas infused with fruit-flavored syrup as an alternative to soft drinks. They aim to provide a wholesome dining experience for everyone. <br><br>
-                    Known for their expertise in hardwood charcoal grilling, Three Guys And A Grill operates as a supper club and catering service in Sheboygan County's Broughton Marsh Park. The rustic log cabin ambiance adds charm to the dining experience, perfect for families.<br><br>
-                    Their menu features tempting appetizers like alligator, deep-fried asparagus, and Wisconsin's staple white and orange cheddar cheese curds. Guests can savor delicious charcoal-grilled dinner sandwiches and indulge in hand-muddled Old-Fashioned cocktails at the full bar. <br><br>
-                    On weekends, guests can enjoy breakfast while taking in the recreational activities offered at the Marsh Park, including an observation tower, canoeing, fishing, playground, and disk and foot-golf courses.<br><br>
-                    Three Guys & a Grill offers fantastic charcoal grill catering services for those planning events. With portable grills on wheels, they can bring the excitement of hardwood charcoal cooking to any party within a 100-mile radius, serving over 1000 people with a wide selection of menu options.<br><br>
-                </p>
+            <div class="container">
+                <div class="history">
+                    <div class="col-md-8 mx-auto">
+                        <h1>OUR HISTORY</h1>
+                        <img src="history.jpg" alt="History" class="img-fluid">
+                        <hr>
+                        <p>Three Guys And A Grill is a cozy restaurant owned by three friends from different parts of the world. Duncan, a Kiwi; Tom, who hails from Switzerland; and Frank, a Filipino-American, came together to share their homemade recipes with locals and foreigners alike. Their journey began with a shared desire to introduce the best sausages to the Philippines. <br><br>
+                            Inside the warm and inviting restaurant, guests can witness the trusty grill where all the magic happens. Using locally sourced ingredients, they craft mouth-watering dishes and sauces in their kitchen. Their homemade ketchup, muscovado sugar, and fruity guava mustard add unique flavors to every bite. <br><br>
+                            Concerned about health, Three Guys And A Grill offers homemade sodas infused with fruit-flavored syrup as an alternative to soft drinks. They aim to provide a wholesome dining experience for everyone. <br><br>
+                            Known for their expertise in hardwood charcoal grilling, Three Guys And A Grill operates as a supper club and catering service in Sheboygan County's Broughton Marsh Park. The rustic log cabin ambiance adds charm to the dining experience, perfect for families.<br><br>
+                            Their menu features tempting appetizers like alligator, deep-fried asparagus, and Wisconsin's staple white and orange cheddar cheese curds. Guests can savor delicious charcoal-grilled dinner sandwiches and indulge in hand-muddled Old-Fashioned cocktails at the full bar. <br><br>
+                            On weekends, guests can enjoy breakfast while taking in the recreational activities offered at the Marsh Park, including an observation tower, canoeing, fishing, playground, and disk and foot-golf courses.<br><br>
+                            Three Guys & a Grill offers fantastic charcoal grill catering services for those planning events. With portable grills on wheels, they can bring the excitement of hardwood charcoal cooking to any party within a 100-mile radius, serving over 1000 people with a wide selection of menu options.<br><br>
+                        </p>
+                    </div>
+                </div>
             </div>
+            
         </center>
     </div>
     <footer>    
